@@ -28,6 +28,7 @@ public class ScatteringAndGatheringTest {
 //                使用流打印，查看buffer 的position和 limit
                 Arrays.asList(byteBuffer).stream().map(buffer -> "position=" + buffer.position() + "limit=" + buffer.limit()).forEach(System.out::println);
             }
+
             Arrays.asList(byteBuffer).forEach(buffer -> buffer.flip());
 
             long byteWrite = 0;
